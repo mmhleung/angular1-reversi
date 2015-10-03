@@ -1,0 +1,28 @@
+<div id="content" ng-controller='GameController as ctrl'>
+  <!-- Now the variable: ctrl refers to the GameController -->
+  <div id="heading" class="row">
+    <h1 class="title">Reversi game</h1>
+    <div class="infoes-container">
+      <div class="info-container">
+        <div class="scores-container">
+          <div class="score-container">Black score: {{ ctrl.game.blackScore }}</div>
+          <div class="score-container">White score: {{ ctrl.game.whiteScore }}</div>
+        </div>
+        <div class="controls-container">
+          <button ng-click="ctrl.newGame()" text="New Game">New Game</button>
+        </div>
+      </div>
+    </div> 
+    <div class="infoes-container">
+      <h2 ng-show="!(ctrl.game.showWinner())">Next turn: {{ ctrl.game.currentColour }}</h2>
+      <h2 ng-show="ctrl.game.showWinner()">Game over !!! {{ ctrl.game.winner }} is the winner</h2>
+    </div>
+    
+  </div>
+  
+  <!-- instructions -->
+  <div id="game-container">
+    <div grid ng-model='ctrl.game' class="row"></div>
+  </div>
+  
+</div>

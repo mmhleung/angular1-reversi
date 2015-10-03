@@ -1,0 +1,104 @@
+
+$tile-count: 8; // the number of tiles per row/column
+$tile-padding: 5px; // the padding between tiles
+$width: 440px;  // (50+5)*8 width of the whole board
+$tile-size: ($width - $tile-padding * ($tile-count + 1)) / $tile-count;
+
+.clear {
+  clear:both;
+}
+.infoes-container {
+  width: 100%;
+  display:block;
+  clear:both;
+}
+.scores-container {
+  float:left;
+  width:50%;
+}
+.score-container {
+  font-size:1.4em;
+}
+.controls-container {
+  float:right;
+  width:50%;
+}
+
+#game, .gameboard {
+  position: relative;
+  width: $width;
+  height: $width; // The gameboard is a square
+
+
+
+  .grid-container {
+    position: absolute;   // the grid is absolutely positioned
+    z-index: 1;           // IMPORTANT to set the z-index for layering
+    margin: 0 auto;       // center
+
+    .grid-cell {
+      width: $tile-size;              // set the cell width
+      height: $tile-size;             // set the cell height
+      margin-bottom: $tile-padding;   // the padding between lower cells
+      margin-right: $tile-padding;    // the padding between the right cell
+      
+      background-color: #00AF00;
+      float:left;
+      // ...
+    }
+  }
+  .tile-container {
+    position: absolute;
+    z-index: 2;
+    margin: 0 auto;       // center
+    
+    .tile {
+      width: $tile-size;              // set the cell width
+      height: $tile-size;             // set the cell height
+      margin-bottom: $tile-padding;   // the padding between lower cells
+      margin-right: $tile-padding;    // the padding between the right cell
+      
+      float: none;
+      
+      
+      .tile-inner {
+        font-size: 20px; 
+      }
+      
+      // ...
+      // Dynamically create .position-#{x}-#{y} classes to mark
+      // where each tile will be placed
+      @for $x from 1 through $tile-count {
+        @for $y from 1 through $tile-count {
+          $zeroOffsetX: $x - 1;
+          $zeroOffsetY: $y - 1;
+          $newX: ($tile-size) * ($zeroOffsetX) + ($tile-padding * $zeroOffsetX);
+          $newY: ($tile-size) * ($zeroOffsetY) + ($tile-padding * $zeroOffsetY);
+    
+          &.position-#{$zeroOffsetX}-#{$zeroOffsetY} {
+            -webkit-transform: translate($newX, $newY);
+            transform: translate($newX, $newY);
+            position: absolute;
+            border-radius: ($tile-size / 2);
+          }
+          
+          &.tile-color-white, &.tile-color-White {
+            background-color: #FFFFFF;
+          }
+          &.tile-color-black, &.tile-color-Black {
+            background-color: #000000;
+          }
+          &.tile-color-none { 
+            background-color: none;   
+          }
+          &.tile-color-None {
+            background-color: none;
+          }
+          
+          .special { background-color: none; }
+        }
+      }
+      // ...
+    }
+  }
+}

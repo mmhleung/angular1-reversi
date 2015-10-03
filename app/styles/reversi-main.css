@@ -1,0 +1,1798 @@
+/* line 7, reversi-main.scss */
+.clear {
+  clear: both;
+}
+
+/* line 10, reversi-main.scss */
+.infoes-container {
+  width: 100%;
+  display: block;
+  clear: both;
+}
+
+/* line 15, reversi-main.scss */
+.scores-container {
+  float: left;
+  width: 50%;
+}
+
+/* line 19, reversi-main.scss */
+.score-container {
+  font-size: 1.4em;
+}
+
+/* line 22, reversi-main.scss */
+.controls-container {
+  float: right;
+  width: 50%;
+}
+
+/* line 27, reversi-main.scss */
+#game, .gameboard {
+  position: relative;
+  width: 440px;
+  height: 440px;
+}
+/* line 34, reversi-main.scss */
+#game .grid-container, .gameboard .grid-container {
+  position: absolute;
+  z-index: 1;
+  margin: 0 auto;
+}
+/* line 39, reversi-main.scss */
+#game .grid-container .grid-cell, .gameboard .grid-container .grid-cell {
+  width: 49.375px;
+  height: 49.375px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  background-color: #00AF00;
+  float: left;
+}
+/* line 50, reversi-main.scss */
+#game .tile-container, .gameboard .tile-container {
+  position: absolute;
+  z-index: 2;
+  margin: 0 auto;
+}
+/* line 55, reversi-main.scss */
+#game .tile-container .tile, .gameboard .tile-container .tile {
+  width: 49.375px;
+  height: 49.375px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  float: none;
+}
+/* line 64, reversi-main.scss */
+#game .tile-container .tile .tile-inner, .gameboard .tile-container .tile .tile-inner {
+  font-size: 20px;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-0-0, .gameboard .tile-container .tile.position-0-0 {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-0-1, .gameboard .tile-container .tile.position-0-1 {
+  -webkit-transform: translate(0px, 54.375px);
+  transform: translate(0px, 54.375px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-0-2, .gameboard .tile-container .tile.position-0-2 {
+  -webkit-transform: translate(0px, 108.75px);
+  transform: translate(0px, 108.75px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-0-3, .gameboard .tile-container .tile.position-0-3 {
+  -webkit-transform: translate(0px, 163.125px);
+  transform: translate(0px, 163.125px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-0-4, .gameboard .tile-container .tile.position-0-4 {
+  -webkit-transform: translate(0px, 217.5px);
+  transform: translate(0px, 217.5px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-0-5, .gameboard .tile-container .tile.position-0-5 {
+  -webkit-transform: translate(0px, 271.875px);
+  transform: translate(0px, 271.875px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-0-6, .gameboard .tile-container .tile.position-0-6 {
+  -webkit-transform: translate(0px, 326.25px);
+  transform: translate(0px, 326.25px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-0-7, .gameboard .tile-container .tile.position-0-7 {
+  -webkit-transform: translate(0px, 380.625px);
+  transform: translate(0px, 380.625px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-1-0, .gameboard .tile-container .tile.position-1-0 {
+  -webkit-transform: translate(54.375px, 0px);
+  transform: translate(54.375px, 0px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-1-1, .gameboard .tile-container .tile.position-1-1 {
+  -webkit-transform: translate(54.375px, 54.375px);
+  transform: translate(54.375px, 54.375px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-1-2, .gameboard .tile-container .tile.position-1-2 {
+  -webkit-transform: translate(54.375px, 108.75px);
+  transform: translate(54.375px, 108.75px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-1-3, .gameboard .tile-container .tile.position-1-3 {
+  -webkit-transform: translate(54.375px, 163.125px);
+  transform: translate(54.375px, 163.125px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-1-4, .gameboard .tile-container .tile.position-1-4 {
+  -webkit-transform: translate(54.375px, 217.5px);
+  transform: translate(54.375px, 217.5px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-1-5, .gameboard .tile-container .tile.position-1-5 {
+  -webkit-transform: translate(54.375px, 271.875px);
+  transform: translate(54.375px, 271.875px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-1-6, .gameboard .tile-container .tile.position-1-6 {
+  -webkit-transform: translate(54.375px, 326.25px);
+  transform: translate(54.375px, 326.25px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-1-7, .gameboard .tile-container .tile.position-1-7 {
+  -webkit-transform: translate(54.375px, 380.625px);
+  transform: translate(54.375px, 380.625px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-2-0, .gameboard .tile-container .tile.position-2-0 {
+  -webkit-transform: translate(108.75px, 0px);
+  transform: translate(108.75px, 0px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-2-1, .gameboard .tile-container .tile.position-2-1 {
+  -webkit-transform: translate(108.75px, 54.375px);
+  transform: translate(108.75px, 54.375px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-2-2, .gameboard .tile-container .tile.position-2-2 {
+  -webkit-transform: translate(108.75px, 108.75px);
+  transform: translate(108.75px, 108.75px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-2-3, .gameboard .tile-container .tile.position-2-3 {
+  -webkit-transform: translate(108.75px, 163.125px);
+  transform: translate(108.75px, 163.125px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-2-4, .gameboard .tile-container .tile.position-2-4 {
+  -webkit-transform: translate(108.75px, 217.5px);
+  transform: translate(108.75px, 217.5px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-2-5, .gameboard .tile-container .tile.position-2-5 {
+  -webkit-transform: translate(108.75px, 271.875px);
+  transform: translate(108.75px, 271.875px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-2-6, .gameboard .tile-container .tile.position-2-6 {
+  -webkit-transform: translate(108.75px, 326.25px);
+  transform: translate(108.75px, 326.25px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-2-7, .gameboard .tile-container .tile.position-2-7 {
+  -webkit-transform: translate(108.75px, 380.625px);
+  transform: translate(108.75px, 380.625px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-3-0, .gameboard .tile-container .tile.position-3-0 {
+  -webkit-transform: translate(163.125px, 0px);
+  transform: translate(163.125px, 0px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-3-1, .gameboard .tile-container .tile.position-3-1 {
+  -webkit-transform: translate(163.125px, 54.375px);
+  transform: translate(163.125px, 54.375px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-3-2, .gameboard .tile-container .tile.position-3-2 {
+  -webkit-transform: translate(163.125px, 108.75px);
+  transform: translate(163.125px, 108.75px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-3-3, .gameboard .tile-container .tile.position-3-3 {
+  -webkit-transform: translate(163.125px, 163.125px);
+  transform: translate(163.125px, 163.125px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-3-4, .gameboard .tile-container .tile.position-3-4 {
+  -webkit-transform: translate(163.125px, 217.5px);
+  transform: translate(163.125px, 217.5px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-3-5, .gameboard .tile-container .tile.position-3-5 {
+  -webkit-transform: translate(163.125px, 271.875px);
+  transform: translate(163.125px, 271.875px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-3-6, .gameboard .tile-container .tile.position-3-6 {
+  -webkit-transform: translate(163.125px, 326.25px);
+  transform: translate(163.125px, 326.25px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-3-7, .gameboard .tile-container .tile.position-3-7 {
+  -webkit-transform: translate(163.125px, 380.625px);
+  transform: translate(163.125px, 380.625px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-4-0, .gameboard .tile-container .tile.position-4-0 {
+  -webkit-transform: translate(217.5px, 0px);
+  transform: translate(217.5px, 0px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-4-1, .gameboard .tile-container .tile.position-4-1 {
+  -webkit-transform: translate(217.5px, 54.375px);
+  transform: translate(217.5px, 54.375px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-4-2, .gameboard .tile-container .tile.position-4-2 {
+  -webkit-transform: translate(217.5px, 108.75px);
+  transform: translate(217.5px, 108.75px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-4-3, .gameboard .tile-container .tile.position-4-3 {
+  -webkit-transform: translate(217.5px, 163.125px);
+  transform: translate(217.5px, 163.125px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-4-4, .gameboard .tile-container .tile.position-4-4 {
+  -webkit-transform: translate(217.5px, 217.5px);
+  transform: translate(217.5px, 217.5px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-4-5, .gameboard .tile-container .tile.position-4-5 {
+  -webkit-transform: translate(217.5px, 271.875px);
+  transform: translate(217.5px, 271.875px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-4-6, .gameboard .tile-container .tile.position-4-6 {
+  -webkit-transform: translate(217.5px, 326.25px);
+  transform: translate(217.5px, 326.25px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-4-7, .gameboard .tile-container .tile.position-4-7 {
+  -webkit-transform: translate(217.5px, 380.625px);
+  transform: translate(217.5px, 380.625px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-5-0, .gameboard .tile-container .tile.position-5-0 {
+  -webkit-transform: translate(271.875px, 0px);
+  transform: translate(271.875px, 0px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-5-1, .gameboard .tile-container .tile.position-5-1 {
+  -webkit-transform: translate(271.875px, 54.375px);
+  transform: translate(271.875px, 54.375px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-5-2, .gameboard .tile-container .tile.position-5-2 {
+  -webkit-transform: translate(271.875px, 108.75px);
+  transform: translate(271.875px, 108.75px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-5-3, .gameboard .tile-container .tile.position-5-3 {
+  -webkit-transform: translate(271.875px, 163.125px);
+  transform: translate(271.875px, 163.125px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-5-4, .gameboard .tile-container .tile.position-5-4 {
+  -webkit-transform: translate(271.875px, 217.5px);
+  transform: translate(271.875px, 217.5px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-5-5, .gameboard .tile-container .tile.position-5-5 {
+  -webkit-transform: translate(271.875px, 271.875px);
+  transform: translate(271.875px, 271.875px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-5-6, .gameboard .tile-container .tile.position-5-6 {
+  -webkit-transform: translate(271.875px, 326.25px);
+  transform: translate(271.875px, 326.25px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-5-7, .gameboard .tile-container .tile.position-5-7 {
+  -webkit-transform: translate(271.875px, 380.625px);
+  transform: translate(271.875px, 380.625px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-6-0, .gameboard .tile-container .tile.position-6-0 {
+  -webkit-transform: translate(326.25px, 0px);
+  transform: translate(326.25px, 0px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-6-1, .gameboard .tile-container .tile.position-6-1 {
+  -webkit-transform: translate(326.25px, 54.375px);
+  transform: translate(326.25px, 54.375px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-6-2, .gameboard .tile-container .tile.position-6-2 {
+  -webkit-transform: translate(326.25px, 108.75px);
+  transform: translate(326.25px, 108.75px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-6-3, .gameboard .tile-container .tile.position-6-3 {
+  -webkit-transform: translate(326.25px, 163.125px);
+  transform: translate(326.25px, 163.125px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-6-4, .gameboard .tile-container .tile.position-6-4 {
+  -webkit-transform: translate(326.25px, 217.5px);
+  transform: translate(326.25px, 217.5px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-6-5, .gameboard .tile-container .tile.position-6-5 {
+  -webkit-transform: translate(326.25px, 271.875px);
+  transform: translate(326.25px, 271.875px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-6-6, .gameboard .tile-container .tile.position-6-6 {
+  -webkit-transform: translate(326.25px, 326.25px);
+  transform: translate(326.25px, 326.25px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-6-7, .gameboard .tile-container .tile.position-6-7 {
+  -webkit-transform: translate(326.25px, 380.625px);
+  transform: translate(326.25px, 380.625px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-7-0, .gameboard .tile-container .tile.position-7-0 {
+  -webkit-transform: translate(380.625px, 0px);
+  transform: translate(380.625px, 0px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-7-1, .gameboard .tile-container .tile.position-7-1 {
+  -webkit-transform: translate(380.625px, 54.375px);
+  transform: translate(380.625px, 54.375px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-7-2, .gameboard .tile-container .tile.position-7-2 {
+  -webkit-transform: translate(380.625px, 108.75px);
+  transform: translate(380.625px, 108.75px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-7-3, .gameboard .tile-container .tile.position-7-3 {
+  -webkit-transform: translate(380.625px, 163.125px);
+  transform: translate(380.625px, 163.125px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-7-4, .gameboard .tile-container .tile.position-7-4 {
+  -webkit-transform: translate(380.625px, 217.5px);
+  transform: translate(380.625px, 217.5px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-7-5, .gameboard .tile-container .tile.position-7-5 {
+  -webkit-transform: translate(380.625px, 271.875px);
+  transform: translate(380.625px, 271.875px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-7-6, .gameboard .tile-container .tile.position-7-6 {
+  -webkit-transform: translate(380.625px, 326.25px);
+  transform: translate(380.625px, 326.25px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+/* line 78, reversi-main.scss */
+#game .tile-container .tile.position-7-7, .gameboard .tile-container .tile.position-7-7 {
+  -webkit-transform: translate(380.625px, 380.625px);
+  transform: translate(380.625px, 380.625px);
+  position: absolute;
+  border-radius: 24.6875px;
+}
+/* line 85, reversi-main.scss */
+#game .tile-container .tile.tile-color-white, #game .tile-container .tile.tile-color-White, .gameboard .tile-container .tile.tile-color-white, .gameboard .tile-container .tile.tile-color-White {
+  background-color: #FFFFFF;
+}
+/* line 88, reversi-main.scss */
+#game .tile-container .tile.tile-color-black, #game .tile-container .tile.tile-color-Black, .gameboard .tile-container .tile.tile-color-black, .gameboard .tile-container .tile.tile-color-Black {
+  background-color: #000000;
+}
+/* line 91, reversi-main.scss */
+#game .tile-container .tile.tile-color-none, .gameboard .tile-container .tile.tile-color-none {
+  background-color: none;
+}
+/* line 94, reversi-main.scss */
+#game .tile-container .tile.tile-color-None, .gameboard .tile-container .tile.tile-color-None {
+  background-color: none;
+}
+/* line 98, reversi-main.scss */
+#game .tile-container .tile .special, .gameboard .tile-container .tile .special {
+  background-color: none;
+}
+
+/*# sourceMappingURL=reversi-main.css.map */
