@@ -1,4 +1,4 @@
-# reversi
+# Reversi
 
 This is a reversi game implemented in Angular JS 1.4.6.
 
